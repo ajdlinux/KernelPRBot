@@ -66,9 +66,10 @@ find a more specific mailing list, then
 is the place to send your patches.
 
 It’s not usually necessary to subscribe to the mailing list before you send the
-patches, but if you’re interested in kernel development, subscribing to a
-subsystem mailing list is a good idea. (Don’t subscribe to LKML - it’s not
-necessary, and you will receive about a thousand messages per day.)
+patches, but if you're interested in kernel development, subscribing to a
+subsystem mailing list is a good idea. (At this point, you probably don't need
+to subscribe to LKML - it is a very high traffic list with about a thousand
+messages per day, which is often not useful for beginners.)
 
 How do I send my contribution?
 ------------------------------
