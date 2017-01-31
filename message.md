@@ -1,149 +1,37 @@
-Hi @{{ username }}!
+I'd just like to interject for moment. What you're refering to as Linux, is in fact, GNU/Linux, or as I've recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX.
 
-Thanks for your contribution to the Linux kernel!
+Many computer users run a modified version of the GNU system every day, without realizing it. Through a peculiar turn of events, the version of GNU which is widely used today is often called Linux, and many of its users are not aware that it is basically the GNU system, developed by the GNU Project.
 
-Most Linux kernel development happens on mailing lists, rather than on
-GitHub. So that your change can become part of Linux, please email it to us as a
-patch.
+There really is a Linux, and these people are using it, but it is just a part of the system they use. Linux is the kernel: the program in the system that allocates the machine's resources to the other programs that you run. The kernel is an essential part of an operating system, but useless by itself; it can only function in the context of a complete operating system. Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux. All the so-called Linux distributions are really distributions of GNU/Linux! Many users do not understand the difference between the kernel, which is Linux, and the whole system, which they also call “Linux”. The ambiguous use of the name doesn't help people understand. These users often think that Linus Torvalds developed the whole operating system in 1991, with a bit of help.
 
-Sending patches isn’t quite as simple as sending a pull request, but fortunately
-it is a well documented process.
+Programmers generally know that Linux is a kernel. But since they have generally heard the whole system called “Linux” as well, they often envisage a history that would justify naming the whole system after the kernel. For example, many believe that once Linus Torvalds finished writing Linux, the kernel, its users looked around for other free software to go with it, and found that (for no particular reason) most everything necessary to make a Unix-like system was already available.
 
-Here’s what to do:
+What they found was no accident—it was the not-quite-complete GNU system. The available free software added up to a complete system because the GNU Project had been working since 1984 to make one. In the The GNU Manifesto we set forth the goal of developing a free Unix-like system, called GNU. The Initial Announcement of the GNU Project also outlines some of the original plans for the GNU system. By the time Linux was started, GNU was almost finished.
 
-* Format your contribution according to kernel requirements
-* Decide who to send your contribution to
-* Set up your system to send your contribution as an email
-* Send your contribution and wait for feedback
+Most free software projects have the goal of developing a particular program for a particular job. For example, Linus Torvalds set out to write a Unix-like kernel (Linux); Donald Knuth set out to write a text formatter (TeX); Bob Scheifler set out to develop a window system (the X Window System). It's natural to measure the contribution of this kind of project by specific programs that came from the project.
 
-How do I format my contribution?
---------------------------------
+If we tried to measure the GNU Project's contribution in this way, what would we conclude? One CD-ROM vendor found that in their “Linux distribution”, GNU software was the largest single contingent, around 28% of the total source code, and this included some of the essential major components without which there could be no system. Linux itself was about 3%. (The proportions in 2008 are similar: in the “main” repository of gNewSense, Linux is 1.5% and GNU packages are 15%.) So if you were going to pick a name for the system based on who wrote the programs in the system, the most appropriate single choice would be “GNU”.
 
-The Linux kernel community is notoriously picky about how contributions are
-formatted and sent. Fortunately, they have documented their expectations.
+But that is not the deepest way to consider the question. The GNU Project was not, is not, a project to develop specific software packages. It was not a project to develop a C compiler, although we did that. It was not a project to develop a text editor, although we developed one. The GNU Project set out to develop a complete free Unix-like system: GNU.
 
-Firstly, all contributions need to be formatted as patches. A patch is a plain
-text document showing the change you want to make to the code, and documenting
-why it is a good idea.
+Many people have made major contributions to the free software in the system, and they all deserve credit for their software. But the reason it is an integrated system—and not just a collection of useful programs—is because the GNU Project set out to make it one. We made a list of the programs needed to make a complete free system, and we systematically found, wrote, or found people to write everything on the list. We wrote essential but unexciting components because you can't have a system without them. Some of our system components, the programming tools, became popular on their own among programmers, but we wrote many components that are not tools. We even developed a chess game, GNU Chess, because a complete system needs games too.
 
-You can create patches with
-[`git format-patch`](https://git-scm.com/docs/git-format-patch).
+By the early 90s we had put together the whole system aside from the kernel. We had also started a kernel, the GNU Hurd, which runs on top of Mach. Developing this kernel has been a lot harder than we expected; the GNU Hurd started working reliably in 2001, but it is a long way from being ready for people to use in general.
 
-Secondly, patches need ‘commit messages’, which is the human-friendly
-documentation explaining what the change is and why it’s necessary.
+Fortunately, we didn't have to wait for the Hurd, because of Linux. Once Torvalds freed Linux in 1992, it fit into the last major gap in the GNU system. People could then combine Linux with the GNU system to make a complete free system: a Linux-based version of the GNU system; the GNU/Linux system, for short.
 
-Thirdly, changes have some technical requirements. There is a Linux kernel
-coding style, and there are licensing requirements you need to comply with.
+Making them work well together was not a trivial job. Some GNU components needed substantial change to work with Linux. Integrating a complete system as a distribution that would work “out of the box” was a big job, too. It required addressing the issue of how to install and boot the system—a problem we had not tackled, because we hadn't yet reached that point. Thus, the people who developed the various system distributions did a lot of essential work. But it was work that, in the nature of things, was surely going to be done by someone.
 
-Both of these are documented in the [Submitting Patches
-documentation](https://kernel.org/doc/html/latest/process/submitting-patches.html)
-that is part of the kernel.
+The GNU Project supports GNU/Linux systems as well as the GNU system. The FSF funded the rewriting of the Linux-related extensions to the GNU C library, so that now they are well integrated, and the newest GNU/Linux systems use the current library release with no changes. The FSF also funded an early stage of the development of Debian GNU/Linux.
 
-Note that you will almost certainly have to modify your existing git commits to
-satisfy these requirements. Don’t worry: there are many guides on the internet
-for doing this.
+Today there are many different variants of the GNU/Linux system (often called “distros”). Most of them include non-free software—their developers follow the philosophy associated with Linux rather than that of GNU. But there are also completely free GNU/Linux distros. The FSF supports computer facilities for two of these distributions, Ututo and gNewSense.
 
-Who do I send my contribution to?
----------------------------------
+Making a free GNU/Linux distribution is not just a matter of eliminating various non-free programs. Nowadays, the usual version of Linux contains non-free programs too. These programs are intended to be loaded into I/O devices when the system starts, and they are included, as long series of numbers, in the "source code" of Linux. Thus, maintaining free GNU/Linux distributions now entails maintaining a free version of Linux too.
 
-The Linux kernel is composed of a number of subsystems. These subsystems are
-maintained by different people, and have different mailing lists where they
-discuss proposed changes.
+Whether you use GNU/Linux or not, please don't confuse the public by using the name “Linux” ambiguously. Linux is the kernel, one of the essential major components of the system. The system as a whole is basically the GNU system, with Linux added. When you're talking about this combination, please call it “GNU/Linux”.
 
-If you don’t already know what subsystem your change belongs to, the
-`get_maintainer.pl` script in the kernel source can help you.
+If you want to make a link on “GNU/Linux” for further reference, this page and http://www.gnu.org/gnu/the-gnu-project.html are good choices. If you mention Linux, the kernel, and want to add a link for further reference, http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?Linux is a good URL to use.
 
-`get_maintainer.pl` will take the patch or patches you created in the previous
-step, and tell you who is responsible for them, and what mailing lists are
-used. You can also take a look at the
-[MAINTAINERS](https://www.kernel.org/doc/linux/MAINTAINERS) file by hand.
+Addendum: Aside from GNU, one other project has independently produced a free Unix-like operating system. This system is known as BSD, and it was developed at UC Berkeley. It was non-free in the 80s, but became free in the early 90s. A free operating system that exists today is almost certainly either a variant of the GNU system, or a kind of BSD system.
 
-Make sure that your list of recipients includes a mailing list. If you can’t
-find a more specific mailing list, then
-[LKML - the Linux Kernel Mailing List](http://vger.kernel.org/vger-lists.html#linux-kernel) -
-is the place to send your patches.
-
-It’s not usually necessary to subscribe to the mailing list before you send the
-patches, but if you’re interested in kernel development, subscribing to a
-subsystem mailing list is a good idea. (Don’t subscribe to LKML - it’s not
-necessary, and you will receive about a thousand messages per day.)
-
-How do I send my contribution?
-------------------------------
-
-Use [`git send-email`](https://git-scm.com/docs/git-send-email), which will
-ensure that your patches are formatted in the standard manner. In order to use
-`git send-email`, you’ll need to configure git to use your SMTP email server.
-
-For more information about using `git send-email`, look at the
-[Git documentation](https://git-scm.com/docs/git-send-email) or type `git help
-send-email`. There are a number of useful guides and tutorials about `git
-send-email` that can be found on the internet.
-
-How do I get help if I’m stuck?
--------------------------------
-
-Firstly, don’t get discouraged! There are an enormous number of resources on the
-internet, and many kernel developers who would like to see you succeed.
-
-Many issues - especially about how to use certain tools - can be resolved by
-using your favourite internet search engine.
-
-If you can’t find an answer, there are a few places you can turn:
-
-* [Kernel Newbies](https://kernelnewbies.org) - this website contains a lot of
-  useful resources for new kernel developers.
-* If you’d like a step-by-step, challenge-based introduction to kernel
-development, the [Eudyptula Challenge](http://eudyptula-challenge.org/) would be
-an excellent start.
-* [The kernel documentation](https://www.kernel.org/doc/html/latest/) - see also
-the `Documentation` directory in the kernel tree.
-
-If you get really, really stuck, you could try the owners of this bot, @daxtens
-and @ajdlinux. Please be aware that we do have full-time jobs, so we are almost
-certainly the slowest way to get answers!
-
-I sent my patch - now what?
----------------------------
-
-You wait.
-
-You can check that your email has been received by checking the mailing list
-archives for the mailing list you sent your patch to. Messages may not be
-received instantly, so be patient. Kernel developers are generally very busy
-people, so it may take a few weeks before your patch is looked at.
-
-Then, you keep waiting. Three things may happen:
-
-* You might get a response to your email. Often these will be comments, which
-  may require you to make changes to your patch, or explain why your way is the
-  best way. You should respond to these comments, and you may need to submit
-  another revision of your patch to address the issues raised.
-* Your patch might be merged into the subsystem tree. Code that becomes part of
-  Linux isn’t merged into the main repository straight away - it first goes into
-  the subsystem tree, which is managed by the subsystem maintainer. It is then
-  batched up with a number of other changes sent to Linus for inclusion. (This
-  process is described in some detail in
-  [the kernel development process guide](https://www.kernel.org/doc/html/latest/process/development-process.html)).
-* Your patch might be ignored completely. This happens sometimes - don’t take it
-personally. Here’s what to do:
-	* Wait a bit more - patches often take several
-	weeks to get a response; more if they were sent at a busy time.
-	* Kernel developers often silently ignore patches that break the
-rules. Check for obvious violations of the the Submitting Patches guidelines,
-the style guidelines, and any other documentation you can find about your
-subsystem. Check that you’re sending your patch to the right place.
-	* Try again later. When you resend it, don’t add angry commentary, as that
-will get your patch ignored. It might also get you silently blacklisted.
-
-Further information
--------------------
-
-* [Working with the kernel development community](https://www.kernel.org/doc/html/latest/process/index.html) -
-  the official documentation for new kernel contributors
-
-Happy hacking!
-
-*This message was posted by a bot - if you have any questions or suggestions,
- please talk to my owners, @ajdlinux and @daxtens, or raise an issue at
- https://github.com/ajdlinux/KernelPRBot.*
+People sometimes ask whether BSD too is a version of GNU, like GNU/Linux. The BSD developers were inspired to make their code free software by the example of the GNU Project, and explicit appeals from GNU activists helped persuade them, but the code had little overlap with GNU. BSD systems today use some GNU programs, just as the GNU system and its variants use some BSD programs; however, taken as wholes, they are two different systems that evolved separately. The BSD developers did not write a kernel and add it to the GNU system, and a name like GNU/BSD would not fit the situation
