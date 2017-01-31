@@ -30,7 +30,7 @@ why it is a good idea.
 You can create patches with
 [`git format-patch`](https://git-scm.com/docs/git-format-patch).
 
-Secondly, patches need ‘commit messages', which is the human-friendly
+Secondly, patches need 'commit messages', which is the human-friendly
 documentation explaining what the change is and why it's necessary.
 
 Thirdly, changes have some technical requirements. There is a Linux kernel
