@@ -52,7 +52,8 @@ maintained by different people, and have different mailing lists where they
 discuss proposed changes.
 
 If you don’t already know what subsystem your change belongs to, the
-`get_maintainer.pl` script in the kernel source can help you.
+[`get_maintainer.pl`](https://github.com/torvalds/linux/blob/master/scripts/get_maintainer.pl)
+script in the kernel source can help you.
 
 `get_maintainer.pl` will take the patch or patches you created in the previous
 step, and tell you who is responsible for them, and what mailing lists are
