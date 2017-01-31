@@ -2,9 +2,10 @@ Hi @{{ username }}!
 
 Thanks for your contribution to the Linux kernel!
 
-Most Linux kernel development happens on mailing lists, rather than on
-GitHub. So that your change can become part of Linux, please email it to us as a
-patch.
+Linux kernel development happens on mailing lists, rather than on GitHub - this
+GitHub repository is a read-only mirror that isn't used for accepting
+contributions. So that your change can become part of Linux, please email it to
+us as a patch.
 
 Sending patches isn’t quite as simple as sending a pull request, but fortunately
 it is a well documented process.
