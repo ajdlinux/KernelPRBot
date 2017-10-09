@@ -60,7 +60,6 @@ Many issues - especially about how to use certain tools - can be resolved by usi
 If you can't find an answer, there are a few places you can turn:
 
 * [Kernel Newbies](https://kernelnewbies.org) - this website contains a lot of useful resources for new kernel developers.
-* If you'd like a step-by-step, challenge-based introduction to kernel development, the [Eudyptula Challenge](http://eudyptula-challenge.org/) would be an excellent start.
 * [The kernel documentation](https://www.kernel.org/doc/html/latest/) - see also the `Documentation` directory in the kernel tree.
 
 If you get really, really stuck, you could try the owners of this bot, @daxtens and @ajdlinux. Please be aware that we do have full-time jobs, so we are almost certainly the slowest way to get answers!
