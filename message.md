@@ -77,7 +77,7 @@ Then, you keep waiting. Three things may happen:
 * Your patch might be merged into the subsystem tree. Code that becomes part of Linux isn't merged into the main repository straight away - it first goes into the subsystem tree, which is managed by the subsystem maintainer. It is then batched up with a number of other changes sent to Linus for inclusion. (This process is described in some detail in [the kernel development process guide](https://www.kernel.org/doc/html/latest/process/development-process.html)).
 * Your patch might be ignored completely. This happens sometimes - don't take it personally. Here's what to do:
 	* Wait a bit more - patches often take several weeks to get a response; more if they were sent at a busy time.
-	* Kernel developers often silently ignore patches that break the rules. Check for obvious violations of the the Submitting Patches guidelines, the style guidelines, and any other documentation you can find about your subsystem. Check that you're sending your patch to the right place.
+	* Kernel developers often silently ignore patches that break the rules. Check for obvious violations of the Submitting Patches guidelines, the style guidelines, and any other documentation you can find about your subsystem. Check that you're sending your patch to the right place.
 	* Try again later. When you resend it, don't add angry commentary, as that will get your patch ignored. It might also get you silently blacklisted.
 
 Further information
