@@ -30,8 +30,8 @@ Both of these are documented in the [Submitting Patches documentation](https://k
 
 Note that you will almost certainly have to modify your existing git commits to satisfy these requirements. Don't worry: there are many guides on the internet for doing this.
 
-Who do I send my contribution to?
----------------------------------
+Where do I send my contribution?
+--------------------------------
 
 The Linux kernel is composed of a number of subsystems. These subsystems are maintained by different people, and have different mailing lists where they discuss proposed changes.
 
