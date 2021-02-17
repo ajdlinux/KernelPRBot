@@ -73,7 +73,7 @@ You can check that your email has been received by checking the mailing list arc
 
 Then, you keep waiting. Three things may happen:
 
-* You might get a response to your email. Often these will be comments, which may require you to make changes to your patch, or explain why your way is the best way. You should respond to these comments, and you may need to submit another revision of your patch to address the issues raised.
+* You might get a response to your email. Often these will be comments, which may require you to make changes to your patch, or explain why your way isn't the best way. You should respond to these comments, and you may need to submit another revision of your patch to address the issues raised.
 * Your patch might be merged into the subsystem tree. Code that becomes part of Linux isn't merged into the main repository straight away - it first goes into the subsystem tree, which is managed by the subsystem maintainer. It is then batched up with a number of other changes sent to Linus for inclusion. (This process is described in some detail in [the kernel development process guide](https://www.kernel.org/doc/html/latest/process/development-process.html)).
 * Your patch might be ignored completely. This happens sometimes - don't take it personally. Here's what to do:
 	* Wait a bit more - patches often take several weeks to get a response; more if they were sent at a busy time.
